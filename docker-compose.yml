@@ -1,0 +1,6 @@
+﻿services:
+  testdeploy:
+    image: testdeploy
+    build:
+      context: .
+      dockerfile: TestDeploy/Dockerfile
