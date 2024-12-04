@@ -1,6 +1,6 @@
 ﻿services:
   testdeploy:
-    image: testdeploy
-    build:
-      context: .
-      dockerfile: TestDeploy/Dockerfile
+    container_name: testdeploy
+    image: ghcr.io/sergienkovy/testdeploy:master
+    ports:
+      - 80:80
